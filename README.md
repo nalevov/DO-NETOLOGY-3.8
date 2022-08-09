@@ -45,4 +45,5 @@
 4. Командой ip -br route проверили таблицу маршрутизации
 ![image](https://user-images.githubusercontent.com/95496224/183738219-e74c2425-fb1f-4795-8e3c-c78f4046c56a.png)
 
+
       
