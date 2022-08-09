@@ -35,5 +35,14 @@
       path 7FE02F391370 RPKI State not found
       rx pathid: 0, tx pathid: 0x0
  ```
-      
+
+## 2. Создайте dummy0 интерфейс в Ubuntu. Добавьте несколько статических маршрутов. Проверьте таблицу маршрутизации.
+
+### Решение:
+1. Командой sudo modprobe -v dummy numdummies=2 создаем 2 интерфейса
+2. Командой sudo ip addr add 192.168.1.150/24 dev dummy0 задаем ip адрес для dummy  интерфейса
+3. Командой sudo ip route add 192.168.1.150 dev eth0 прописали статический маршрут 
+4. Командой ip -br route проверили таблицу маршрутизации
+![image](https://user-images.githubusercontent.com/95496224/183738219-e74c2425-fb1f-4795-8e3c-c78f4046c56a.png)
+
       
